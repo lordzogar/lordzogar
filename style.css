@@ -1,0 +1,365 @@
+/* style.css */
+
+/* Basic reset and general styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+    background-image: url("images/bg-wood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+/* Header styles */
+header {
+    background-color: #e07a5f;
+    color: #f5f5dc;
+    padding: 1rem 0;
+    border-bottom: 2px solid #808000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right li {
+    margin-left: 20px;
+}
+
+.header-right .header-links {
+    display: flex; /* Modified: Use flexbox */
+    gap: 10px;
+    align-items: center; /* Modified: Align items vertically */
+    margin-left: 20px;
+}
+
+/* Added Styles for Label */
+.header-right .header-links .label {
+    font-style: italic;
+    color: #f5f5dc; /* Or any color you prefer */
+    margin-right: 10px; /* Add spacing between label and links */
+}
+
+.linkedin-link,
+.github-link,
+.kaggle-link { /* Added kaggle link to the group */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #f5f5dc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover,
+.github-link:hover,
+.kaggle-link:hover {
+    color: #808000;
+}
+
+/* Intro styles */
+#intro {
+    margin-top: 20px;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.intro-image {
+    text-align: center;
+}
+
+#intro img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.intro-text {
+    color: #333; /* Dark gray - adjust as needed */
+}
+
+.intro-text h2 { /* Name */
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffd700; /* Gold */
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 0.5em; /* Adjust spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+} 
+
+.intro-text p {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #432818; /* Dark Brown - provides good contrast */
+    font-size: 2.0em;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2); /* Light shadow */
+    border: 1px solid #808000; /* Olive Green - consider a darker shade */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f0e3; /* Off-White/Cream - complements coral */
+}
+
+/* Project grid styles */
+.project-category {
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    border: 1px solid #808000; /* Olive Green */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream with slight transparency */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-description {
+    color: #333; /* Dark gray */
+}
+
+.project-description h3 {
+    margin-bottom: 10px;
+    color: #e07a5f; /* Burnt orange */
+}
+
+.project-description p {
+    margin-bottom: 10px;
+}
+
+.project-link {
+    font-style: italic;
+    color: #808000; /* Olive Green */
+    margin-top: 10px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e07a5f; /* Burnt orange */
+    color: #f5f5dc; /* Beige/Cream */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.learn-more-link:hover {
+    background-color: #d16e54; /* Slightly darker burnt orange */
+}
+
+#about p {
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream with slight transparency - same as other sections */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #808000; /* Olive Green border - same as other sections */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #808000; /* Olive Green */
+    background-color: #e07a5f; /* Burnt orange */
+    color: #f5f5dc; /* Beige/Cream */
+}
+
+/* Section Header Styles */
+#projects h2,
+#hobbies h2,
+#about h2 {
+    background-color: #f5f5dc; /* Beige/Cream */
+    color: #e07a5f; /* Burnt orange */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center the section titles */
+}
+
+/* Navigation Styles */
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #f5f5dc; /* Beige/Cream */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both */
+}
+
+.main-nav a:hover {
+    background-color: rgba(128, 128, 0, 0.2); /* Transparent Olive Green */
+    color: #808000; /* Olive Green on hover */
+}
+
+#neutral-names-details h2,
+#neutral-names-details h3 {
+    background-color: #f5f5dc; /* Beige/Cream */
+    color: #e07a5f; /* Burnt orange */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.word-cloud h4 { /* Style the word cloud titles */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.explanation-text { /* Style the explanation paragraph */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream */
+    padding: 20px
+}
+
+#friday-13th-details h2,
+#friday-13th-details h3 {
+    background-color: #f5f5dc; /* Beige/Cream */
+    color: #e07a5f; /* Burnt orange */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project-description { /* Style the project description */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #808000; /* Olive Green border */
+    margin-bottom: 20px;
+}
+
+.visualizations { /* Style the visualizations container */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #808000; /* Olive Green border */
+    margin-bottom: 20px;
+    text-align: center; /* Center the images */
+}
+
+.visualizations img { /* Style the visualization images */
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+    margin: 10px; /* Space between images */
+    border: 1px solid #808000; /* Olive Green border */
+    border-radius: 5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* Spacing between skills */
+    background-color: rgba(245, 245, 220, 0.8); /* Beige/Cream with slight transparency */
+    padding: 20px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #808000; /* Olive Green border - same as other sections */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.skill {
+    text-align: center; /* Center image and text */
+    position: relative; /* For positioning preview */
+}
+
+.skill img {
+    max-width: 120px; /* Adjust image size */
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #808000;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    margin: 0; /* Remove default paragraph margins */
+    font-size: 0.9em; /* Smaller font for skill names */
+}
+
+.skill-preview {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    z-index: 1; /* Ensure it's on top */
+    width: 100%; /* Cover the skill area */
+    height: 100%;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.skill:hover .skill-preview {
+    display: flex; /* Show on hover */
+}
+
+#skills h2 {
+    background-color: #f5f5dc; /* Beige/Cream */
+    color: #e07a5f; /* Burnt orange */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
